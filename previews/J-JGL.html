@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/sets/J-JGL-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>J-JGL visual preview</title>
+	<style>
+		@font-face {
+			font-family: Beleren;
+			src: url('/resources/beleren.ttf');
+		}
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('/img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('/img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 1%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('/img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('/img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.dropdown {
+			background: rgba(23, 23, 23, 0.8);
+			border-radius: 8px;
+			position: absolute;
+			left: 10%;
+			width: fit-content;
+			margin: 20px 0;
+			padding: 5px 0;
+			display: flex;
+			flex-direction: column;
+			z-index: 3;
+		}
+		.dropdown .set-bar {
+			font-family: Beleren;
+			font-size: 20px;
+			text-decoration: none;
+			color: #e3e3e3;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			padding: 0 12px;
+			margin: 5px;
+		}
+		.dropdown .set-bar:hover {
+			background: rgba(163, 163, 163, 0.5);
+			color: #f3f3f3;
+		}
+		.dropdown .set-bar img {
+			width: 32px;
+		}
+		.dropdown .inactive {
+			height: 0px;
+			overflow: hidden;
+			margin: 0px 5px;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		.addenda-container {
+			text-align: center;
+			width: fit-content;
+			max-width: 1200px;
+			padding: 0 5%;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/J-JGL-files/logo.png" />
+	<img class="preload-hidden" src="/sets/J-JGL-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+	
+		<a class="set-bar" href="J-JGL"><img src="/sets/J-JGL-files/icon.png">Janaya: The Gifted Land</a>
+	
+		</div>
+		<div class="banner">
+		<img class="logo" src="/sets/J-JGL-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+					<div class="container"><img data-alt_src="/sets\J-JGL-files\img\46_RW02 — Nori, Redeemed Knight_back.png" alt="/sets\J-JGL-files\img\46_RW02 — Nori, Redeemed Knight_front.png" id="46_RW02 — Nori, Redeemed Knight" data-flag="@XD" onclick="openSidebar('46_RW02 — Nori, Redeemed Knight',false)"><button class="flip-btn" onclick="imgFlip('46_RW02 — Nori, Redeemed Knight')"></button></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\86_MU01 — Tonia, the Many_back.png" alt="/sets\J-JGL-files\img\86_MU01 — Tonia, the Many_front.png" id="86_MU01 — Tonia, the Many" data-flag="@XD" onclick="openSidebar('86_MU01 — Tonia, the Many',false)"><button class="flip-btn" onclick="imgFlip('86_MU01 — Tonia, the Many')"></button></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\136_RB06 — Reigan's Rapture.png" id="136_RB06 — Reigans Rapture" data-flag="@X" onclick="openSidebar('136_RB06 — Reigans Rapture',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\179_RR06 — Collapse the Cavern.png" id="179_RR06 — Collapse the Cavern" data-flag="@X" onclick="openSidebar('179_RR06 — Collapse the Cavern',false)"></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\219_RG03 — Balyan, the Brawler_back.png" alt="/sets\J-JGL-files\img\219_RG03 — Balyan, the Brawler_front.png" id="219_RG03 — Balyan, the Brawler" data-flag="@XD" onclick="openSidebar('219_RG03 — Balyan, the Brawler',false)"><button class="flip-btn" onclick="imgFlip('219_RG03 — Balyan, the Brawler')"></button></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\24_CW01 — Curious Temple Servant_back.png" alt="/sets\J-JGL-files\img\24_CW01 — Curious Temple Servant_front.png" id="24_CW01 — Curious Temple Servant" data-flag="@XD" onclick="openSidebar('24_CW01 — Curious Temple Servant',false)"><button class="flip-btn" onclick="imgFlip('24_CW01 — Curious Temple Servant')"></button></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\89_RU02 — Jaspar, Elusive Mind_back.png" alt="/sets\J-JGL-files\img\89_RU02 — Jaspar, Elusive Mind_front.png" id="89_RU02 — Jaspar, Elusive Mind" data-flag="@XD" onclick="openSidebar('89_RU02 — Jaspar, Elusive Mind',false)"><button class="flip-btn" onclick="imgFlip('89_RU02 — Jaspar, Elusive Mind')"></button></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\110_CB01 — Ambitious Footsoldier.png" id="110_CB01 — Ambitious Footsoldier" data-flag="@X" onclick="openSidebar('110_CB01 — Ambitious Footsoldier',false)"></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\153_CR01 — Guardians' Infantry_back.png" alt="/sets\J-JGL-files\img\153_CR01 — Guardians' Infantry_front.png" id="153_CR01 — Guardians Infantry" data-flag="@XD" onclick="openSidebar('153_CR01 — Guardians Infantry',false)"><button class="flip-btn" onclick="imgFlip('153_CR01 — Guardians Infantry')"></button></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\224_RG08 — Spiritual Sanctuary.png" id="224_RG08 — Spiritual Sanctuary" data-flag="@X" onclick="openSidebar('224_RG08 — Spiritual Sanctuary',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\25_CW02 — Tragic Poet.png" id="25_CW02 — Tragic Poet" data-flag="@X" onclick="openSidebar('25_CW02 — Tragic Poet',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\94_RU07 — Loch Gurinn Reflection.png" id="94_RU07 — Loch Gurinn Reflection" data-flag="@X" onclick="openSidebar('94_RU07 — Loch Gurinn Reflection',false)"></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\111_CB02 — Backstabber Corporal_back.png" alt="/sets\J-JGL-files\img\111_CB02 — Backstabber Corporal_front.png" id="111_CB02 — Backstabber Corporal" data-flag="@XD" onclick="openSidebar('111_CB02 — Backstabber Corporal',false)"><button class="flip-btn" onclick="imgFlip('111_CB02 — Backstabber Corporal')"></button></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\154_CR02 — Spinetailed Slinger.png" id="154_CR02 — Spinetailed Slinger" data-flag="@X" onclick="openSidebar('154_CR02 — Spinetailed Slinger',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\196_CG01 — Supply Recon.png" id="196_CG01 — Supply Recon" data-flag="@X" onclick="openSidebar('196_CG01 — Supply Recon',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\26_CW03 — Dune Revenant.png" id="26_CW03 — Dune Revenant" data-flag="@X" onclick="openSidebar('26_CW03 — Dune Revenant',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\106_UU10 — Turned By the Splinter.png" id="106_UU10 — Turned By the Splinter" data-flag="@X" onclick="openSidebar('106_UU10 — Turned By the Splinter',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\112_CB03 — Temple Thief.png" id="112_CB03 — Temple Thief" data-flag="@X" onclick="openSidebar('112_CB03 — Temple Thief',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\155_CR03 — Dwarven Forge-Chanter.png" id="155_CR03 — Dwarven Forge-Chanter" data-flag="@X" onclick="openSidebar('155_CR03 — Dwarven Forge-Chanter',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\197_CG02 — Gifted Archer.png" id="197_CG02 — Gifted Archer" data-flag="@X" onclick="openSidebar('197_CG02 — Gifted Archer',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\27_CW04 — Splinter Support.png" id="27_CW04 — Splinter Support" data-flag="@X" onclick="openSidebar('27_CW04 — Splinter Support',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\107_UU11 — Council's Deliberation.png" id="107_UU11 — Councils Deliberation" data-flag="@X" onclick="openSidebar('107_UU11 — Councils Deliberation',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\113_CB04 — Battlefield Gravedigger.png" id="113_CB04 — Battlefield Gravedigger" data-flag="@X" onclick="openSidebar('113_CB04 — Battlefield Gravedigger',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\156_CR04 — Steel Smasher.png" id="156_CR04 — Steel Smasher" data-flag="@X" onclick="openSidebar('156_CR04 — Steel Smasher',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\198_CG03 — Infantry of the Givers.png" id="198_CG03 — Infantry of the Givers" data-flag="@X" onclick="openSidebar('198_CG03 — Infantry of the Givers',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\28_CW05 — Gifted Speaker.png" id="28_CW05 — Gifted Speaker" data-flag="@X" onclick="openSidebar('28_CW05 — Gifted Speaker',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\67_CU01 — Reflecting Pool Spirit.png" id="67_CU01 — Reflecting Pool Spirit" data-flag="@X" onclick="openSidebar('67_CU01 — Reflecting Pool Spirit',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\114_CB05 — Vampire Surestrike.png" id="114_CB05 — Vampire Surestrike" data-flag="@X" onclick="openSidebar('114_CB05 — Vampire Surestrike',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\157_CR05 — Resource Replacer.png" id="157_CR05 — Resource Replacer" data-flag="@X" onclick="openSidebar('157_CR05 — Resource Replacer',false)"></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\199_CG04 — Riled Axe Wielder_back.png" alt="/sets\J-JGL-files\img\199_CG04 — Riled Axe Wielder_front.png" id="199_CG04 — Riled Axe Wielder" data-flag="@XD" onclick="openSidebar('199_CG04 — Riled Axe Wielder',false)"><button class="flip-btn" onclick="imgFlip('199_CG04 — Riled Axe Wielder')"></button></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\29_CW06 — Guardians' Devotee_back.png" alt="/sets\J-JGL-files\img\29_CW06 — Guardians' Devotee_front.png" id="29_CW06 — Guardians Devotee" data-flag="@XD" onclick="openSidebar('29_CW06 — Guardians Devotee',false)"><button class="flip-btn" onclick="imgFlip('29_CW06 — Guardians Devotee')"></button></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\68_CU02 — Splinter Scout.png" id="68_CU02 — Splinter Scout" data-flag="@X" onclick="openSidebar('68_CU02 — Splinter Scout',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\115_CB06 — Gifted Ambusher.png" id="115_CB06 — Gifted Ambusher" data-flag="@X" onclick="openSidebar('115_CB06 — Gifted Ambusher',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\158_CR06 — Forge Sentinel.png" id="158_CR06 — Forge Sentinel" data-flag="@X" onclick="openSidebar('158_CR06 — Forge Sentinel',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\200_CG05 — Turback Blossomer.png" id="200_CG05 — Turback Blossomer" data-flag="@X" onclick="openSidebar('200_CG05 — Turback Blossomer',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\30_CW07 — Forge Militiaman.png" id="30_CW07 — Forge Militiaman" data-flag="@X" onclick="openSidebar('30_CW07 — Forge Militiaman',false)"></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\69_CU03 — Guardians' Scholar_back.png" alt="/sets\J-JGL-files\img\69_CU03 — Guardians' Scholar_front.png" id="69_CU03 — Guardians Scholar" data-flag="@XD" onclick="openSidebar('69_CU03 — Guardians Scholar',false)"><button class="flip-btn" onclick="imgFlip('69_CU03 — Guardians Scholar')"></button></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\116_CB07 — Guardians' Gravewalker_back.png" alt="/sets\J-JGL-files\img\116_CB07 — Guardians' Gravewalker_front.png" id="116_CB07 — Guardians Gravewalker" data-flag="@XD" onclick="openSidebar('116_CB07 — Guardians Gravewalker',false)"><button class="flip-btn" onclick="imgFlip('116_CB07 — Guardians Gravewalker')"></button></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\159_CR07 — Twinblade Warrior_back.png" alt="/sets\J-JGL-files\img\159_CR07 — Twinblade Warrior_front.png" id="159_CR07 — Twinblade Warrior" data-flag="@XD" onclick="openSidebar('159_CR07 — Twinblade Warrior',false)"><button class="flip-btn" onclick="imgFlip('159_CR07 — Twinblade Warrior')"></button></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\201_CG06 — Rescuer Elf.png" id="201_CG06 — Rescuer Elf" data-flag="@X" onclick="openSidebar('201_CG06 — Rescuer Elf',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\31_CW08 — Splinter Warden.png" id="31_CW08 — Splinter Warden" data-flag="@X" onclick="openSidebar('31_CW08 — Splinter Warden',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\70_CU04 — Zephyr Scribe.png" id="70_CU04 — Zephyr Scribe" data-flag="@X" onclick="openSidebar('70_CU04 — Zephyr Scribe',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\117_CB08 — Hamlet Sentinel.png" id="117_CB08 — Hamlet Sentinel" data-flag="@X" onclick="openSidebar('117_CB08 — Hamlet Sentinel',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\160_CR08 — Gifted Battlemage.png" id="160_CR08 — Gifted Battlemage" data-flag="@X" onclick="openSidebar('160_CR08 — Gifted Battlemage',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\202_CG07 — Leonin Forest Hunter.png" id="202_CG07 — Leonin Forest Hunter" data-flag="@X" onclick="openSidebar('202_CG07 — Leonin Forest Hunter',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\32_CW09 — Parellan Sentinel.png" id="32_CW09 — Parellan Sentinel" data-flag="@X" onclick="openSidebar('32_CW09 — Parellan Sentinel',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\71_CU05 — Underbrush Vine Grabber.png" id="71_CU05 — Underbrush Vine Grabber" data-flag="@X" onclick="openSidebar('71_CU05 — Underbrush Vine Grabber',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\118_CB09 — Jai Wastes Behemoth.png" id="118_CB09 — Jai Wastes Behemoth" data-flag="@X" onclick="openSidebar('118_CB09 — Jai Wastes Behemoth',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\161_CR09 — Western Reinforcements.png" id="161_CR09 — Western Reinforcements" data-flag="@X" onclick="openSidebar('161_CR09 — Western Reinforcements',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\203_CG08 — Battlefield Leader.png" id="203_CG08 — Battlefield Leader" data-flag="@X" onclick="openSidebar('203_CG08 — Battlefield Leader',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\33_CW10 — Aven Skywatcher.png" id="33_CW10 — Aven Skywatcher" data-flag="@X" onclick="openSidebar('33_CW10 — Aven Skywatcher',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\72_CU06 — Splinter Scavenger.png" id="72_CU06 — Splinter Scavenger" data-flag="@X" onclick="openSidebar('72_CU06 — Splinter Scavenger',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\119_CB10 — Hero of the Hamlets.png" id="119_CB10 — Hero of the Hamlets" data-flag="@X" onclick="openSidebar('119_CB10 — Hero of the Hamlets',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\162_CR10 — Boulderbaest.png" id="162_CR10 — Boulderbaest" data-flag="@X" onclick="openSidebar('162_CR10 — Boulderbaest',false)"></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\204_CG09 — Guardians' Gifted_back.png" alt="/sets\J-JGL-files\img\204_CG09 — Guardians' Gifted_front.png" id="204_CG09 — Guardians Gifted" data-flag="@XD" onclick="openSidebar('204_CG09 — Guardians Gifted',false)"><button class="flip-btn" onclick="imgFlip('204_CG09 — Guardians Gifted')"></button></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\34_CW11 — Dust Mother.png" id="34_CW11 — Dust Mother" data-flag="@X" onclick="openSidebar('34_CW11 — Dust Mother',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\73_CU07 — Spellstriker.png" id="73_CU07 — Spellstriker" data-flag="@X" onclick="openSidebar('73_CU07 — Spellstriker',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\120_CB11 — Urkragg's Judgment.png" id="120_CB11 — Urkraggs Judgment" data-flag="@X" onclick="openSidebar('120_CB11 — Urkraggs Judgment',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\163_CR11 — Spite of Reigan.png" id="163_CR11 — Spite of Reigan" data-flag="@X" onclick="openSidebar('163_CR11 — Spite of Reigan',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\205_CG10 — Turback Sentinel.png" id="205_CG10 — Turback Sentinel" data-flag="@X" onclick="openSidebar('205_CG10 — Turback Sentinel',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\35_CW12 — Reinforcer Knight.png" id="35_CW12 — Reinforcer Knight" data-flag="@X" onclick="openSidebar('35_CW12 — Reinforcer Knight',false)"></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\74_CU08 — Wind Rider Cavalry_back.png" alt="/sets\J-JGL-files\img\74_CU08 — Wind Rider Cavalry_front.png" id="74_CU08 — Wind Rider Cavalry" data-flag="@XD" onclick="openSidebar('74_CU08 — Wind Rider Cavalry',false)"><button class="flip-btn" onclick="imgFlip('74_CU08 — Wind Rider Cavalry')"></button></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\121_CB12 — Dead Weight.png" id="121_CB12 — Dead Weight" data-flag="@X" onclick="openSidebar('121_CB12 — Dead Weight',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\164_CR12 — Mob Assault.png" id="164_CR12 — Mob Assault" data-flag="@X" onclick="openSidebar('164_CR12 — Mob Assault',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\206_CG11 — Parellan Green Knight.png" id="206_CG11 — Parellan Green Knight" data-flag="@X" onclick="openSidebar('206_CG11 — Parellan Green Knight',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\36_CW13 — Givers' Verdict.png" id="36_CW13 — Givers Verdict" data-flag="@X" onclick="openSidebar('36_CW13 — Givers Verdict',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\75_CU09 — Gifted Watchman.png" id="75_CU09 — Gifted Watchman" data-flag="@X" onclick="openSidebar('75_CU09 — Gifted Watchman',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\122_CB13 — Feast of Dreams.png" id="122_CB13 — Feast of Dreams" data-flag="@X" onclick="openSidebar('122_CB13 — Feast of Dreams',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\165_CR13 — Fling.png" id="165_CR13 — Fling" data-flag="@X" onclick="openSidebar('165_CR13 — Fling',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\207_CG12 — Prey Upon.png" id="207_CG12 — Prey Upon" data-flag="@X" onclick="openSidebar('207_CG12 — Prey Upon',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\37_CW14 — Cage of Hands.png" id="37_CW14 — Cage of Hands" data-flag="@X" onclick="openSidebar('37_CW14 — Cage of Hands',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\76_CU10 — Plateau Sentinel.png" id="76_CU10 — Plateau Sentinel" data-flag="@X" onclick="openSidebar('76_CU10 — Plateau Sentinel',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\123_CB14 — Sidearm Strike.png" id="123_CB14 — Sidearm Strike" data-flag="@X" onclick="openSidebar('123_CB14 — Sidearm Strike',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\166_CR14 — Sokiin's Glory.png" id="166_CR14 — Sokiins Glory" data-flag="@X" onclick="openSidebar('166_CR14 — Sokiins Glory',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\208_CG13 — Sentinel Growth.png" id="208_CG13 — Sentinel Growth" data-flag="@X" onclick="openSidebar('208_CG13 — Sentinel Growth',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\38_CW15 — Cut Short.png" id="38_CW15 — Cut Short" data-flag="@X" onclick="openSidebar('38_CW15 — Cut Short',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\77_CU11 — Zon's Superiority.png" id="77_CU11 — Zons Superiority" data-flag="@X" onclick="openSidebar('77_CU11 — Zons Superiority',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\124_CB15 — Sight of Grim Fortune.png" id="124_CB15 — Sight of Grim Fortune" data-flag="@X" onclick="openSidebar('124_CB15 — Sight of Grim Fortune',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\167_CR15 — Ritual to the Givers.png" id="167_CR15 — Ritual to the Givers" data-flag="@X" onclick="openSidebar('167_CR15 — Ritual to the Givers',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\209_CG14 — Surtakki Wall Watch.png" id="209_CG14 — Surtakki Wall Watch" data-flag="@X" onclick="openSidebar('209_CG14 — Surtakki Wall Watch',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\39_CW16 — Fizusa's Wings.png" id="39_CW16 — Fizusas Wings" data-flag="@X" onclick="openSidebar('39_CW16 — Fizusas Wings',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\78_CU12 — Never Repeat the Past.png" id="78_CU12 — Never Repeat the Past" data-flag="@X" onclick="openSidebar('78_CU12 — Never Repeat the Past',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\125_CB16 — Save From the Pit.png" id="125_CB16 — Save From the Pit" data-flag="@X" onclick="openSidebar('125_CB16 — Save From the Pit',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\168_CR16 — Unmitigated Fury.png" id="168_CR16 — Unmitigated Fury" data-flag="@X" onclick="openSidebar('168_CR16 — Unmitigated Fury',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\210_CG15 — Commune With Spirits.png" id="210_CG15 — Commune With Spirits" data-flag="@X" onclick="openSidebar('210_CG15 — Commune With Spirits',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\40_CW17 — Gift of Protection.png" id="40_CW17 — Gift of Protection" data-flag="@X" onclick="openSidebar('40_CW17 — Gift of Protection',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\79_CU13 — Capture Sphere.png" id="79_CU13 — Capture Sphere" data-flag="@X" onclick="openSidebar('79_CU13 — Capture Sphere',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\126_CB17 — Extract the Truth.png" id="126_CB17 — Extract the Truth" data-flag="@X" onclick="openSidebar('126_CB17 — Extract the Truth',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\169_CR17 — Daring Escape.png" id="169_CR17 — Daring Escape" data-flag="@X" onclick="openSidebar('169_CR17 — Daring Escape',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\211_CG16 — Gift of Growth.png" id="211_CG16 — Gift of Growth" data-flag="@X" onclick="openSidebar('211_CG16 — Gift of Growth',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\41_CW18 — People's Champion.png" id="41_CW18 — Peoples Champion" data-flag="@X" onclick="openSidebar('41_CW18 — Peoples Champion',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\80_CU14 — Meeting of Minds.png" id="80_CU14 — Meeting of Minds" data-flag="@X" onclick="openSidebar('80_CU14 — Meeting of Minds',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\127_CB18 — Gift of Bargaining.png" id="127_CB18 — Gift of Bargaining" data-flag="@X" onclick="openSidebar('127_CB18 — Gift of Bargaining',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\170_CR18 — Surtakki Cannonade.png" id="170_CR18 — Surtakki Cannonade" data-flag="@X" onclick="openSidebar('170_CR18 — Surtakki Cannonade',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\212_CG17 — Plummet.png" id="212_CG17 — Plummet" data-flag="@X" onclick="openSidebar('212_CG17 — Plummet',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\42_CW19 — Giftdrain.png" id="42_CW19 — Giftdrain" data-flag="@X" onclick="openSidebar('42_CW19 — Giftdrain',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\81_CU15 — Opt.png" id="81_CU15 — Opt" data-flag="@X" onclick="openSidebar('81_CU15 — Opt',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\128_CB19 — Necromancer's Magemark.png" id="128_CB19 — Necromancers Magemark" data-flag="@X" onclick="openSidebar('128_CB19 — Necromancers Magemark',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\171_CR19 — Gift of Revelry.png" id="171_CR19 — Gift of Revelry" data-flag="@X" onclick="openSidebar('171_CR19 — Gift of Revelry',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\213_CG18 — Fertile Ground.png" id="213_CG18 — Fertile Ground" data-flag="@X" onclick="openSidebar('213_CG18 — Fertile Ground',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\82_CU16 — Lost in the Wastes.png" id="82_CU16 — Lost in the Wastes" data-flag="@X" onclick="openSidebar('82_CU16 — Lost in the Wastes',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\214_CG19 — Vorgana's Naturalism.png" id="214_CG19 — Vorganas Naturalism" data-flag="@X" onclick="openSidebar('214_CG19 — Vorganas Naturalism',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\83_CU17 — Gift of Knowledge.png" id="83_CU17 — Gift of Knowledge" data-flag="@X" onclick="openSidebar('83_CU17 — Gift of Knowledge',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\84_CU18 — Dull Mind and Blade.png" id="84_CU18 — Dull Mind and Blade" data-flag="@X" onclick="openSidebar('84_CU18 — Dull Mind and Blade',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\85_CU19 — Glint.png" id="85_CU19 — Glint" data-flag="@X" onclick="openSidebar('85_CU19 — Glint',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="gold" class="anchor"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\249_UM01 — Direct Infiltration.png" id="249_UM01 — Direct Infiltration" data-flag="@X" onclick="openSidebar('249_UM01 — Direct Infiltration',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\250_UM02 — Gravetender of the Seven.png" id="250_UM02 — Gravetender of the Seven" data-flag="@X" onclick="openSidebar('250_UM02 — Gravetender of the Seven',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\251_UM03 — Rage Sentinel.png" id="251_UM03 — Rage Sentinel" data-flag="@X" onclick="openSidebar('251_UM03 — Rage Sentinel',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\252_UM04 — Turback Brawler.png" id="252_UM04 — Turback Brawler" data-flag="@X" onclick="openSidebar('252_UM04 — Turback Brawler',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\253_UM05 — Parellan Ward.png" id="253_UM05 — Parellan Ward" data-flag="@X" onclick="openSidebar('253_UM05 — Parellan Ward',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\254_UM06 — Hamlet Rescuer_back.png" alt="/sets\J-JGL-files\img\254_UM06 — Hamlet Rescuer_front.png" id="254_UM06 — Hamlet Rescuer" data-flag="@XD" onclick="openSidebar('254_UM06 — Hamlet Rescuer',false)"><button class="flip-btn" onclick="imgFlip('254_UM06 — Hamlet Rescuer')"></button></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\255_UM07 — Mindful Mage.png" id="255_UM07 — Mindful Mage" data-flag="@X" onclick="openSidebar('255_UM07 — Mindful Mage',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\256_UM08 — Power from Gurrin.png" id="256_UM08 — Power from Gurrin" data-flag="@X" onclick="openSidebar('256_UM08 — Power from Gurrin',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\257_UM09 — For the Forge!.png" id="257_UM09 — For the Forge!" data-flag="@X" onclick="openSidebar('257_UM09 — For the Forge!',false)"></div>
+				<div class="container"><img data-alt_src="/sets\J-JGL-files\img\258_UM10 — Treeline Guardian_back.png" alt="/sets\J-JGL-files\img\258_UM10 — Treeline Guardian_front.png" id="258_UM10 — Treeline Guardian" data-flag="@XD" onclick="openSidebar('258_UM10 — Treeline Guardian',false)"><button class="flip-btn" onclick="imgFlip('258_UM10 — Treeline Guardian')"></button></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="colorless" class="anchor"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\1_CC01 — Winged Terror.png" id="1_CC01 — Winged Terror" data-flag="@X" onclick="openSidebar('1_CC01 — Winged Terror',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\2_CC02 — Holder of Ancient Power.png" id="2_CC02 — Holder of Ancient Power" data-flag="@X" onclick="openSidebar('2_CC02 — Holder of Ancient Power',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\259_CC03 — Guardian Greatsword.png" id="259_CC03 — Guardian Greatsword" data-flag="@X" onclick="openSidebar('259_CC03 — Guardian Greatsword',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\260_CC04 — Gurinn Prism.png" id="260_CC04 — Gurinn Prism" data-flag="@X" onclick="openSidebar('260_CC04 — Gurinn Prism',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/sets\J-JGL-files\img\262_CC05 — Warped Landscape.png" id="262_CC05 — Warped Landscape" data-flag="@X" onclick="openSidebar('262_CC05 — Warped Landscape',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+	</div>
+	</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="/img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = '/img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		console.log(num);
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		if (num == 'sidebar_img')
+		{
+			const rotated_img = document.getElementById('sidebar_h_img');
+			const sidebar_img = document.getElementById('sidebar_img');
+
+			if (horizontal && rotated_img.style.display == 'none')
+			{
+				rotated_img.style.display = "block";
+				sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+			}
+			else
+			{
+				rotated_img.style.display = "none";
+				sidebar_img.style.filter = "";
+			}
+		}
+	}
+
+	function openSidebar(id, h = false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
+
+		if (horizontal && !sidebar_img.src.includes("_back"))
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	function rolldown() {
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "auto";
+			set.style.margin = "5px";
+		}
+	}
+
+	function rollup() {
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "0px";
+			set.style.margin = "0px 5px";
+		}
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			search();
+		}
+	});
+
+	function search() {
+		const url = new URL('search', window.location.origin);
+		url.searchParams.append('search', document.getElementById("search").value);
+		window.location.href = url;
+	}
+
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
+	</script>
+</body>
+</html>

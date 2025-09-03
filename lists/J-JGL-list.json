@@ -1,0 +1,853 @@
+﻿[
+    {
+        "card_name": "RW02 \u2014 Nori, Redeemed Knight",
+        "number": 46,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "MU01 \u2014 Tonia, the Many",
+        "number": 86,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "RB06 \u2014 Reigan's Rapture",
+        "number": 136,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "RR06 \u2014 Collapse the Cavern",
+        "number": 179,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "RG03 \u2014 Balyan, the Brawler",
+        "number": 219,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW01 \u2014 Curious Temple Servant",
+        "number": 24,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "RU02 \u2014 Jaspar, Elusive Mind",
+        "number": 89,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB01 \u2014 Ambitious Footsoldier",
+        "number": 110,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR01 \u2014 Guardians' Infantry",
+        "number": 153,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "RG08 \u2014 Spiritual Sanctuary",
+        "number": 224,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW02 \u2014 Tragic Poet",
+        "number": 25,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "RU07 \u2014 Loch Gurinn Reflection",
+        "number": 94,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB02 \u2014 Backstabber Corporal",
+        "number": 111,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR02 \u2014 Spinetailed Slinger",
+        "number": 154,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG01 \u2014 Supply Recon",
+        "number": 196,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW03 \u2014 Dune Revenant",
+        "number": 26,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UU10 \u2014 Turned By the Splinter",
+        "number": 106,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB03 \u2014 Temple Thief",
+        "number": 112,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR03 \u2014 Dwarven Forge-Chanter",
+        "number": 155,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG02 \u2014 Gifted Archer",
+        "number": 197,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW04 \u2014 Splinter Support",
+        "number": 27,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UU11 \u2014 Council's Deliberation",
+        "number": 107,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB04 \u2014 Battlefield Gravedigger",
+        "number": 113,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR04 \u2014 Steel Smasher",
+        "number": 156,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG03 \u2014 Infantry of the Givers",
+        "number": 198,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW05 \u2014 Gifted Speaker",
+        "number": 28,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU01 \u2014 Reflecting Pool Spirit",
+        "number": 67,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB05 \u2014 Vampire Surestrike",
+        "number": 114,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR05 \u2014 Resource Replacer",
+        "number": 157,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG04 \u2014 Riled Axe Wielder",
+        "number": 199,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW06 \u2014 Guardians' Devotee",
+        "number": 29,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU02 \u2014 Splinter Scout",
+        "number": 68,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB06 \u2014 Gifted Ambusher",
+        "number": 115,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR06 \u2014 Forge Sentinel",
+        "number": 158,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG05 \u2014 Turback Blossomer",
+        "number": 200,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW07 \u2014 Forge Militiaman",
+        "number": 30,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU03 \u2014 Guardians' Scholar",
+        "number": 69,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB07 \u2014 Guardians' Gravewalker",
+        "number": 116,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR07 \u2014 Twinblade Warrior",
+        "number": 159,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG06 \u2014 Rescuer Elf",
+        "number": 201,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW08 \u2014 Splinter Warden",
+        "number": 31,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU04 \u2014 Zephyr Scribe",
+        "number": 70,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB08 \u2014 Hamlet Sentinel",
+        "number": 117,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR08 \u2014 Gifted Battlemage",
+        "number": 160,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG07 \u2014 Leonin Forest Hunter",
+        "number": 202,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW09 \u2014 Parellan Sentinel",
+        "number": 32,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU05 \u2014 Underbrush Vine Grabber",
+        "number": 71,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB09 \u2014 Jai Wastes Behemoth",
+        "number": 118,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR09 \u2014 Western Reinforcements",
+        "number": 161,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG08 \u2014 Battlefield Leader",
+        "number": 203,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW10 \u2014 Aven Skywatcher",
+        "number": 33,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU06 \u2014 Splinter Scavenger",
+        "number": 72,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB10 \u2014 Hero of the Hamlets",
+        "number": 119,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR10 \u2014 Boulderbaest",
+        "number": 162,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG09 \u2014 Guardians' Gifted",
+        "number": 204,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW11 \u2014 Dust Mother",
+        "number": 34,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU07 \u2014 Spellstriker",
+        "number": 73,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB11 \u2014 Urkragg's Judgment",
+        "number": 120,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR11 \u2014 Spite of Reigan",
+        "number": 163,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG10 \u2014 Turback Sentinel",
+        "number": 205,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW12 \u2014 Reinforcer Knight",
+        "number": 35,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU08 \u2014 Wind Rider Cavalry",
+        "number": 74,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB12 \u2014 Dead Weight",
+        "number": 121,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR12 \u2014 Mob Assault",
+        "number": 164,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG11 \u2014 Parellan Green Knight",
+        "number": 206,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW13 \u2014 Givers' Verdict",
+        "number": 36,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU09 \u2014 Gifted Watchman",
+        "number": 75,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB13 \u2014 Feast of Dreams",
+        "number": 122,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR13 \u2014 Fling",
+        "number": 165,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG12 \u2014 Prey Upon",
+        "number": 207,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW14 \u2014 Cage of Hands",
+        "number": 37,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU10 \u2014 Plateau Sentinel",
+        "number": 76,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB14 \u2014 Sidearm Strike",
+        "number": 123,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR14 \u2014 Sokiin's Glory",
+        "number": 166,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG13 \u2014 Sentinel Growth",
+        "number": 208,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW15 \u2014 Cut Short",
+        "number": 38,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU11 \u2014 Zon's Superiority",
+        "number": 77,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB15 \u2014 Sight of Grim Fortune",
+        "number": 124,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR15 \u2014 Ritual to the Givers",
+        "number": 167,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG14 \u2014 Surtakki Wall Watch",
+        "number": 209,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW16 \u2014 Fizusa's Wings",
+        "number": 39,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU12 \u2014 Never Repeat the Past",
+        "number": 78,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB16 \u2014 Save From the Pit",
+        "number": 125,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR16 \u2014 Unmitigated Fury",
+        "number": 168,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG15 \u2014 Commune With Spirits",
+        "number": 210,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW17 \u2014 Gift of Protection",
+        "number": 40,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU13 \u2014 Capture Sphere",
+        "number": 79,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB17 \u2014 Extract the Truth",
+        "number": 126,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR17 \u2014 Daring Escape",
+        "number": 169,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG16 \u2014 Gift of Growth",
+        "number": 211,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW18 \u2014 People's Champion",
+        "number": 41,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU14 \u2014 Meeting of Minds",
+        "number": 80,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB18 \u2014 Gift of Bargaining",
+        "number": 127,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR18 \u2014 Surtakki Cannonade",
+        "number": 170,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG17 \u2014 Plummet",
+        "number": 212,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CW19 \u2014 Giftdrain",
+        "number": 42,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CU15 \u2014 Opt",
+        "number": 81,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CB19 \u2014 Necromancer's Magemark",
+        "number": 128,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CR19 \u2014 Gift of Revelry",
+        "number": 171,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CG18 \u2014 Fertile Ground",
+        "number": 213,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "CU16 \u2014 Lost in the Wastes",
+        "number": 82,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "CG19 \u2014 Vorgana's Naturalism",
+        "number": 214,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "CU17 \u2014 Gift of Knowledge",
+        "number": 83,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "CU18 \u2014 Dull Mind and Blade",
+        "number": 84,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "CU19 \u2014 Glint",
+        "number": 85,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    "a->gold",
+    {
+        "card_name": "UM01 \u2014 Direct Infiltration",
+        "number": 249,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UM02 \u2014 Gravetender of the Seven",
+        "number": 250,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UM03 \u2014 Rage Sentinel",
+        "number": 251,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UM04 \u2014 Turback Brawler",
+        "number": 252,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UM05 \u2014 Parellan Ward",
+        "number": 253,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "UM06 \u2014 Hamlet Rescuer",
+        "number": 254,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UM07 \u2014 Mindful Mage",
+        "number": 255,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UM08 \u2014 Power from Gurrin",
+        "number": 256,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UM09 \u2014 For the Forge!",
+        "number": 257,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "UM10 \u2014 Treeline Guardian",
+        "number": 258,
+        "shape": "transform double faced",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    "a->colorless",
+    {
+        "card_name": "CC01 \u2014 Winged Terror",
+        "number": 1,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CC02 \u2014 Holder of Ancient Power",
+        "number": 2,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CC03 \u2014 Guardian Greatsword",
+        "number": 259,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "CC04 \u2014 Gurinn Prism",
+        "number": 260,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "CC05 \u2014 Warped Landscape",
+        "number": 262,
+        "shape": "normal",
+        "set": "J-JGL"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    }
+]
