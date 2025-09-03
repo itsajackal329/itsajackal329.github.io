@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "png",
-    "draft_structure": "none",
+    "draft_structure": "draft booster",
     "unpreviewed": "card back",
     "cards": [
         {
@@ -2463,5 +2463,5 @@
             "notes": "REPRINT"
         }
     ],
-    "version": 1
+    "version": 2
 }

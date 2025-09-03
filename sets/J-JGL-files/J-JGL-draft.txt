@@ -1,0 +1,1439 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "CW01 — Curious Temple Servant",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Creature — Human Cleric",
+			"collector_number": "24",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/24_CW01 — Curious Temple Servant_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/24_CW01 — Curious Temple Servant_front.png"
+			}
+		},
+		{
+			"name": "CW02 — Tragic Poet",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Creature — Human",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/25_CW02 — Tragic Poet.png"
+			}
+		},
+		{
+			"name": "CW03 — Dune Revenant",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment Creature — Elemental",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/26_CW03 — Dune Revenant.png"
+			}
+		},
+		{
+			"name": "CW04 — Splinter Support",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Orc Scout",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/27_CW04 — Splinter Support.png"
+			}
+		},
+		{
+			"name": "CW05 — Gifted Speaker",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Dwarf Cleric",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/28_CW05 — Gifted Speaker.png"
+			}
+		},
+		{
+			"name": "CW06 — Guardians' Devotee",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Orc Druid",
+			"collector_number": "29",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/29_CW06 — Guardians' Devotee_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/29_CW06 — Guardians' Devotee_front.png"
+			}
+		},
+		{
+			"name": "CW07 — Forge Militiaman",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Dwarf Warrior",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/30_CW07 — Forge Militiaman.png"
+			}
+		},
+		{
+			"name": "CW08 — Splinter Warden",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/31_CW08 — Splinter Warden.png"
+			}
+		},
+		{
+			"name": "CW09 — Parellan Sentinel",
+			"rarity": "common",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Enchantment Creature — Spirit",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/32_CW09 — Parellan Sentinel.png"
+			}
+		},
+		{
+			"name": "CW10 — Aven Skywatcher",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Bird Soldier",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/33_CW10 — Aven Skywatcher.png"
+			}
+		},
+		{
+			"name": "CW11 — Dust Mother",
+			"rarity": "common",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Enchantment Creature — Elemental",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/34_CW11 — Dust Mother.png"
+			}
+		},
+		{
+			"name": "CW12 — Reinforcer Knight",
+			"rarity": "common",
+			"mana_cost": "{5}{W}",
+			"type": "Creature — Dwarf Knight",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/35_CW12 — Reinforcer Knight.png"
+			}
+		},
+		{
+			"name": "CW13 — Givers' Verdict",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/36_CW13 — Givers' Verdict.png"
+			}
+		},
+		{
+			"name": "CW14 — Cage of Hands",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/37_CW14 — Cage of Hands.png"
+			}
+		},
+		{
+			"name": "CW15 — Cut Short",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/38_CW15 — Cut Short.png"
+			}
+		},
+		{
+			"name": "CW16 — Fizusa's Wings",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/39_CW16 — Fizusa's Wings.png"
+			}
+		},
+		{
+			"name": "CW17 — Gift of Protection",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/40_CW17 — Gift of Protection.png"
+			}
+		},
+		{
+			"name": "CW18 — People's Champion",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/41_CW18 — People's Champion.png"
+			}
+		},
+		{
+			"name": "CW19 — Giftdrain",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/42_CW19 — Giftdrain.png"
+			}
+		},
+		{
+			"name": "CU01 — Reflecting Pool Spirit",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Enchantment Creature — Spirit",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/67_CU01 — Reflecting Pool Spirit.png"
+			}
+		},
+		{
+			"name": "CU02 — Splinter Scout",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Elf Scout",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/68_CU02 — Splinter Scout.png"
+			}
+		},
+		{
+			"name": "CU03 — Guardians' Scholar",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Merfolk Wizard",
+			"collector_number": "69",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/69_CU03 — Guardians' Scholar_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/69_CU03 — Guardians' Scholar_front.png"
+			}
+		},
+		{
+			"name": "CU04 — Zephyr Scribe",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/70_CU04 — Zephyr Scribe.png"
+			}
+		},
+		{
+			"name": "CU05 — Underbrush Vine Grabber",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment Creature — Nymph",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/71_CU05 — Underbrush Vine Grabber.png"
+			}
+		},
+		{
+			"name": "CU06 — Splinter Scavenger",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Merfolk Pirate",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/72_CU06 — Splinter Scavenger.png"
+			}
+		},
+		{
+			"name": "CU07 — Spellstriker",
+			"rarity": "common",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Faerie Rogue",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/73_CU07 — Spellstriker.png"
+			}
+		},
+		{
+			"name": "CU08 — Wind Rider Cavalry",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "74",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/74_CU08 — Wind Rider Cavalry_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/74_CU08 — Wind Rider Cavalry_front.png"
+			}
+		},
+		{
+			"name": "CU09 — Gifted Watchman",
+			"rarity": "common",
+			"mana_cost": "{5}{U}",
+			"type": "Creature — Merfolk Knight",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/75_CU09 — Gifted Watchman.png"
+			}
+		},
+		{
+			"name": "CU10 — Plateau Sentinel",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment Creature — Spirit",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/76_CU10 — Plateau Sentinel.png"
+			}
+		},
+		{
+			"name": "CU11 — Zon's Superiority",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/77_CU11 — Zon's Superiority.png"
+			}
+		},
+		{
+			"name": "CU12 — Never Repeat the Past",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/78_CU12 — Never Repeat the Past.png"
+			}
+		},
+		{
+			"name": "CU13 — Capture Sphere",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/79_CU13 — Capture Sphere.png"
+			}
+		},
+		{
+			"name": "CU14 — Meeting of Minds",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Instant",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/80_CU14 — Meeting of Minds.png"
+			}
+		},
+		{
+			"name": "CU15 — Opt",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/81_CU15 — Opt.png"
+			}
+		},
+		{
+			"name": "CU16 — Lost in the Wastes",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/82_CU16 — Lost in the Wastes.png"
+			}
+		},
+		{
+			"name": "CU17 — Gift of Knowledge",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/83_CU17 — Gift of Knowledge.png"
+			}
+		},
+		{
+			"name": "CU18 — Dull Mind and Blade",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/84_CU18 — Dull Mind and Blade.png"
+			}
+		},
+		{
+			"name": "CU19 — Glint",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/85_CU19 — Glint.png"
+			}
+		},
+		{
+			"name": "CB01 — Ambitious Footsoldier",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Orc Scout",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/110_CB01 — Ambitious Footsoldier.png"
+			}
+		},
+		{
+			"name": "CB02 — Backstabber Corporal",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "111",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/111_CB02 — Backstabber Corporal_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/111_CB02 — Backstabber Corporal_front.png"
+			}
+		},
+		{
+			"name": "CB03 — Temple Thief",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Rogue",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/112_CB03 — Temple Thief.png"
+			}
+		},
+		{
+			"name": "CB04 — Battlefield Gravedigger",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Orc Cleric",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/113_CB04 — Battlefield Gravedigger.png"
+			}
+		},
+		{
+			"name": "CB05 — Vampire Surestrike",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Vampire Rogue",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/114_CB05 — Vampire Surestrike.png"
+			}
+		},
+		{
+			"name": "CB06 — Gifted Ambusher",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Elf Warrior",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/115_CB06 — Gifted Ambusher.png"
+			}
+		},
+		{
+			"name": "CB07 — Guardians' Gravewalker",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Elf Warlock",
+			"collector_number": "116",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/116_CB07 — Guardians' Gravewalker_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/116_CB07 — Guardians' Gravewalker_front.png"
+			}
+		},
+		{
+			"name": "CB08 — Hamlet Sentinel",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Enchantment Creature — Spirit",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/117_CB08 — Hamlet Sentinel.png"
+			}
+		},
+		{
+			"name": "CB09 — Jai Wastes Behemoth",
+			"rarity": "common",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Enchantment Creature — Zombie",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/118_CB09 — Jai Wastes Behemoth.png"
+			}
+		},
+		{
+			"name": "CB10 — Hero of the Hamlets",
+			"rarity": "common",
+			"mana_cost": "{5}{B}",
+			"type": "Creature — Orc Berserker",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/119_CB10 — Hero of the Hamlets.png"
+			}
+		},
+		{
+			"name": "CB11 — Urkragg's Judgment",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/120_CB11 — Urkragg's Judgment.png"
+			}
+		},
+		{
+			"name": "CB12 — Dead Weight",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/121_CB12 — Dead Weight.png"
+			}
+		},
+		{
+			"name": "CB13 — Feast of Dreams",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/122_CB13 — Feast of Dreams.png"
+			}
+		},
+		{
+			"name": "CB14 — Sidearm Strike",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/123_CB14 — Sidearm Strike.png"
+			}
+		},
+		{
+			"name": "CB15 — Sight of Grim Fortune",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/124_CB15 — Sight of Grim Fortune.png"
+			}
+		},
+		{
+			"name": "CB16 — Save From the Pit",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Sorcery",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/125_CB16 — Save From the Pit.png"
+			}
+		},
+		{
+			"name": "CB17 — Extract the Truth",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/126_CB17 — Extract the Truth.png"
+			}
+		},
+		{
+			"name": "CB18 — Gift of Bargaining",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/127_CB18 — Gift of Bargaining.png"
+			}
+		},
+		{
+			"name": "CB19 — Necromancer's Magemark",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/128_CB19 — Necromancer's Magemark.png"
+			}
+		},
+		{
+			"name": "CR01 — Guardians' Infantry",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Dwarf Soldier",
+			"collector_number": "153",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/153_CR01 — Guardians' Infantry_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/153_CR01 — Guardians' Infantry_front.png"
+			}
+		},
+		{
+			"name": "CR02 — Spinetailed Slinger",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Viashino Warrior",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/154_CR02 — Spinetailed Slinger.png"
+			}
+		},
+		{
+			"name": "CR03 — Dwarven Forge-Chanter",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Dwarf Wizard",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/155_CR03 — Dwarven Forge-Chanter.png"
+			}
+		},
+		{
+			"name": "CR04 — Steel Smasher",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Goblin Shaman",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/156_CR04 — Steel Smasher.png"
+			}
+		},
+		{
+			"name": "CR05 — Resource Replacer",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Rogue",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/157_CR05 — Resource Replacer.png"
+			}
+		},
+		{
+			"name": "CR06 — Forge Sentinel",
+			"rarity": "common",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Enchantment Creature — Spirit",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/158_CR06 — Forge Sentinel.png"
+			}
+		},
+		{
+			"name": "CR07 — Twinblade Warrior",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "159",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/159_CR07 — Twinblade Warrior_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/159_CR07 — Twinblade Warrior_front.png"
+			}
+		},
+		{
+			"name": "CR08 — Gifted Battlemage",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Goblin Cleric",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/160_CR08 — Gifted Battlemage.png"
+			}
+		},
+		{
+			"name": "CR09 — Western Reinforcements",
+			"rarity": "common",
+			"mana_cost": "{4}{R}",
+			"type": "Sorcery",
+			"collector_number": "161",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/161_CR09 — Western Reinforcements.png"
+			}
+		},
+		{
+			"name": "CR10 — Boulderbaest",
+			"rarity": "common",
+			"mana_cost": "{5}{R}",
+			"type": "Enchantment Creature — Elemental",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/162_CR10 — Boulderbaest.png"
+			}
+		},
+		{
+			"name": "CR11 — Spite of Reigan",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "163",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/163_CR11 — Spite of Reigan.png"
+			}
+		},
+		{
+			"name": "CR12 — Mob Assault",
+			"rarity": "common",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/164_CR12 — Mob Assault.png"
+			}
+		},
+		{
+			"name": "CR13 — Fling",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/165_CR13 — Fling.png"
+			}
+		},
+		{
+			"name": "CR14 — Sokiin's Glory",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/166_CR14 — Sokiin's Glory.png"
+			}
+		},
+		{
+			"name": "CR15 — Ritual to the Givers",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/167_CR15 — Ritual to the Givers.png"
+			}
+		},
+		{
+			"name": "CR16 — Unmitigated Fury",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment — Aura",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/168_CR16 — Unmitigated Fury.png"
+			}
+		},
+		{
+			"name": "CR17 — Daring Escape",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "169",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/169_CR17 — Daring Escape.png"
+			}
+		},
+		{
+			"name": "CR18 — Surtakki Cannonade",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Wall",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/170_CR18 — Surtakki Cannonade.png"
+			}
+		},
+		{
+			"name": "CR19 — Gift of Revelry",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Enchantment — Aura",
+			"collector_number": "171",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/171_CR19 — Gift of Revelry.png"
+			}
+		},
+		{
+			"name": "CG01 — Supply Recon",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Goblin Scout",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/196_CG01 — Supply Recon.png"
+			}
+		},
+		{
+			"name": "CG02 — Gifted Archer",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Elf Archer",
+			"collector_number": "197",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/197_CG02 — Gifted Archer.png"
+			}
+		},
+		{
+			"name": "CG03 — Infantry of the Givers",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment Creature — Spirit",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/198_CG03 — Infantry of the Givers.png"
+			}
+		},
+		{
+			"name": "CG04 — Riled Axe Wielder",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Berserker",
+			"collector_number": "199",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/199_CG04 — Riled Axe Wielder_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/199_CG04 — Riled Axe Wielder_front.png"
+			}
+		},
+		{
+			"name": "CG05 — Turback Blossomer",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Enchantment Creature — Nymph",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/200_CG05 — Turback Blossomer.png"
+			}
+		},
+		{
+			"name": "CG06 — Rescuer Elf",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Elf Soldier",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/201_CG06 — Rescuer Elf.png"
+			}
+		},
+		{
+			"name": "CG07 — Leonin Forest Hunter",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Cat Ranger",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/202_CG07 — Leonin Forest Hunter.png"
+			}
+		},
+		{
+			"name": "CG08 — Battlefield Leader",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/203_CG08 — Battlefield Leader.png"
+			}
+		},
+		{
+			"name": "CG09 — Guardians' Gifted",
+			"rarity": "common",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Goblin Druid",
+			"collector_number": "204",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/204_CG09 — Guardians' Gifted_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/204_CG09 — Guardians' Gifted_front.png"
+			}
+		},
+		{
+			"name": "CG10 — Turback Sentinel",
+			"rarity": "common",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Enchantment Creature — Spirit",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/205_CG10 — Turback Sentinel.png"
+			}
+		},
+		{
+			"name": "CG11 — Parellan Green Knight",
+			"rarity": "common",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Elf Knight",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/206_CG11 — Parellan Green Knight.png"
+			}
+		},
+		{
+			"name": "CG12 — Prey Upon",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Sorcery",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/207_CG12 — Prey Upon.png"
+			}
+		},
+		{
+			"name": "CG13 — Sentinel Growth",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/208_CG13 — Sentinel Growth.png"
+			}
+		},
+		{
+			"name": "CG14 — Surtakki Wall Watch",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/209_CG14 — Surtakki Wall Watch.png"
+			}
+		},
+		{
+			"name": "CG15 — Commune With Spirits",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Sorcery",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/210_CG15 — Commune With Spirits.png"
+			}
+		},
+		{
+			"name": "CG16 — Gift of Growth",
+			"rarity": "common",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/211_CG16 — Gift of Growth.png"
+			}
+		},
+		{
+			"name": "CG17 — Plummet",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/212_CG17 — Plummet.png"
+			}
+		},
+		{
+			"name": "CG18 — Fertile Ground",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/213_CG18 — Fertile Ground.png"
+			}
+		},
+		{
+			"name": "CG19 — Vorgana's Naturalism",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "214",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/214_CG19 — Vorgana's Naturalism.png"
+			}
+		},
+		{
+			"name": "UU10 — Turned By the Splinter",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/106_UU10 — Turned By the Splinter.png"
+			}
+		},
+		{
+			"name": "UU11 — Council's Deliberation",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/107_UU11 — Council's Deliberation.png"
+			}
+		},
+		{
+			"name": "RW02 — Nori, Redeemed Knight",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Legendary Creature — Human Knight",
+			"collector_number": "46",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/46_RW02 — Nori, Redeemed Knight_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/46_RW02 — Nori, Redeemed Knight_front.png"
+			}
+		},
+		{
+			"name": "RU02 — Jaspar, Elusive Mind",
+			"rarity": "rare",
+			"mana_cost": "{U}{U}",
+			"type": "Legendary Creature — Elf Rogue",
+			"collector_number": "89",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/89_RU02 — Jaspar, Elusive Mind_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/89_RU02 — Jaspar, Elusive Mind_front.png"
+			}
+		},
+		{
+			"name": "RU07 — Loch Gurinn Reflection",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Instant",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/94_RU07 — Loch Gurinn Reflection.png"
+			}
+		},
+		{
+			"name": "RB06 — Reigan's Rapture",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/136_RB06 — Reigan's Rapture.png"
+			}
+		},
+		{
+			"name": "RR06 — Collapse the Cavern",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "179",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/179_RR06 — Collapse the Cavern.png"
+			}
+		},
+		{
+			"name": "RG03 — Balyan, the Brawler",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Legendary Creature — Human Warrior",
+			"collector_number": "219",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/219_RG03 — Balyan, the Brawler_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/219_RG03 — Balyan, the Brawler_front.png"
+			}
+		},
+		{
+			"name": "RG08 — Spiritual Sanctuary",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/224_RG08 — Spiritual Sanctuary.png"
+			}
+		},
+		{
+			"name": "MU01 — Tonia, the Many",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Legendary Creature — Faerie Wizard",
+			"collector_number": "86",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/86_MU01 — Tonia, the Many_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/86_MU01 — Tonia, the Many_front.png"
+			}
+		},
+		{
+			"name": "UM01 — Direct Infiltration",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Instant",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/249_UM01 — Direct Infiltration.png"
+			}
+		},
+		{
+			"name": "UM02 — Gravetender of the Seven",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}{B}",
+			"type": "Creature — Human Warlock",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/250_UM02 — Gravetender of the Seven.png"
+			}
+		},
+		{
+			"name": "UM03 — Rage Sentinel",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Enchantment Creature — Spirit",
+			"collector_number": "251",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/251_UM03 — Rage Sentinel.png"
+			}
+		},
+		{
+			"name": "UM04 — Turback Brawler",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{G}",
+			"type": "Creature — Goblin Warrior",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/252_UM04 — Turback Brawler.png"
+			}
+		},
+		{
+			"name": "UM05 — Parellan Ward",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{W}",
+			"type": "Enchantment",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/253_UM05 — Parellan Ward.png"
+			}
+		},
+		{
+			"name": "UM06 — Hamlet Rescuer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{B}",
+			"type": "Creature — Orc Soldier",
+			"collector_number": "254",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/254_UM06 — Hamlet Rescuer_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/254_UM06 — Hamlet Rescuer_front.png"
+			}
+		},
+		{
+			"name": "UM07 — Mindful Mage",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{R}",
+			"type": "Creature — Human Wizard",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/255_UM07 — Mindful Mage.png"
+			}
+		},
+		{
+			"name": "UM08 — Power from Gurrin",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{G}",
+			"type": "Instant",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/256_UM08 — Power from Gurrin.png"
+			}
+		},
+		{
+			"name": "UM09 — For the Forge!",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{R}{W}",
+			"type": "Sorcery",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/257_UM09 — For the Forge!.png"
+			}
+		},
+		{
+			"name": "UM10 — Treeline Guardian",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{U}",
+			"type": "Creature — Elf Cleric",
+			"collector_number": "258",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/258_UM10 — Treeline Guardian_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/258_UM10 — Treeline Guardian_front.png"
+			}
+		},
+		{
+			"name": "CC01 — Winged Terror",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Enchantment Creature — Mutant",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/1_CC01 — Winged Terror.png"
+			}
+		},
+		{
+			"name": "CC02 — Holder of Ancient Power",
+			"rarity": "common",
+			"mana_cost": "{5}",
+			"type": "Enchantment Creature — Mutant",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/2_CC02 — Holder of Ancient Power.png"
+			}
+		},
+		{
+			"name": "CC03 — Guardian Greatsword",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Equipment",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/259_CC03 — Guardian Greatsword.png"
+			}
+		},
+		{
+			"name": "CC04 — Gurinn Prism",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/260_CC04 — Gurinn Prism.png"
+			}
+		},
+		{
+			"name": "CC05 — Warped Landscape",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://itsajackal329.github.io/sets/J-JGL-files/img/262_CC05 — Warped Landscape.png"
+			}
+		}
+	]
+
+[rare(1)]
+	5 RW02 — Nori, Redeemed Knight
+	5 RU02 — Jaspar, Elusive Mind
+	5 RU07 — Loch Gurinn Reflection
+	5 RB06 — Reigan's Rapture
+	5 RR06 — Collapse the Cavern
+	5 RG03 — Balyan, the Brawler
+	5 RG08 — Spiritual Sanctuary
+	5 MU01 — Tonia, the Many
+[uncommon(3)]
+	5 UU10 — Turned By the Splinter
+	5 UU11 — Council's Deliberation
+	5 UM01 — Direct Infiltration
+	5 UM02 — Gravetender of the Seven
+	5 UM03 — Rage Sentinel
+	5 UM04 — Turback Brawler
+	5 UM05 — Parellan Ward
+	5 UM06 — Hamlet Rescuer
+	5 UM07 — Mindful Mage
+	5 UM08 — Power from Gurrin
+	5 UM09 — For the Forge!
+	5 UM10 — Treeline Guardian
+[common(10)]
+	5 CW01 — Curious Temple Servant
+	5 CW02 — Tragic Poet
+	5 CW03 — Dune Revenant
+	5 CW04 — Splinter Support
+	5 CW05 — Gifted Speaker
+	5 CW06 — Guardians' Devotee
+	5 CW07 — Forge Militiaman
+	5 CW08 — Splinter Warden
+	5 CW09 — Parellan Sentinel
+	5 CW10 — Aven Skywatcher
+	5 CW11 — Dust Mother
+	5 CW12 — Reinforcer Knight
+	5 CW13 — Givers' Verdict
+	5 CW14 — Cage of Hands
+	5 CW15 — Cut Short
+	5 CW16 — Fizusa's Wings
+	5 CW17 — Gift of Protection
+	5 CW18 — People's Champion
+	5 CW19 — Giftdrain
+	5 CU01 — Reflecting Pool Spirit
+	5 CU02 — Splinter Scout
+	5 CU03 — Guardians' Scholar
+	5 CU04 — Zephyr Scribe
+	5 CU05 — Underbrush Vine Grabber
+	5 CU06 — Splinter Scavenger
+	5 CU07 — Spellstriker
+	5 CU08 — Wind Rider Cavalry
+	5 CU09 — Gifted Watchman
+	5 CU10 — Plateau Sentinel
+	5 CU11 — Zon's Superiority
+	5 CU12 — Never Repeat the Past
+	5 CU13 — Capture Sphere
+	5 CU14 — Meeting of Minds
+	5 CU15 — Opt
+	5 CU16 — Lost in the Wastes
+	5 CU17 — Gift of Knowledge
+	5 CU18 — Dull Mind and Blade
+	5 CU19 — Glint
+	5 CB01 — Ambitious Footsoldier
+	5 CB02 — Backstabber Corporal
+	5 CB03 — Temple Thief
+	5 CB04 — Battlefield Gravedigger
+	5 CB05 — Vampire Surestrike
+	5 CB06 — Gifted Ambusher
+	5 CB07 — Guardians' Gravewalker
+	5 CB08 — Hamlet Sentinel
+	5 CB09 — Jai Wastes Behemoth
+	5 CB10 — Hero of the Hamlets
+	5 CB11 — Urkragg's Judgment
+	5 CB12 — Dead Weight
+	5 CB13 — Feast of Dreams
+	5 CB14 — Sidearm Strike
+	5 CB15 — Sight of Grim Fortune
+	5 CB16 — Save From the Pit
+	5 CB17 — Extract the Truth
+	5 CB18 — Gift of Bargaining
+	5 CB19 — Necromancer's Magemark
+	5 CR01 — Guardians' Infantry
+	5 CR02 — Spinetailed Slinger
+	5 CR03 — Dwarven Forge-Chanter
+	5 CR04 — Steel Smasher
+	5 CR05 — Resource Replacer
+	5 CR06 — Forge Sentinel
+	5 CR07 — Twinblade Warrior
+	5 CR08 — Gifted Battlemage
+	5 CR09 — Western Reinforcements
+	5 CR10 — Boulderbaest
+	5 CR11 — Spite of Reigan
+	5 CR12 — Mob Assault
+	5 CR13 — Fling
+	5 CR14 — Sokiin's Glory
+	5 CR15 — Ritual to the Givers
+	5 CR16 — Unmitigated Fury
+	5 CR17 — Daring Escape
+	5 CR18 — Surtakki Cannonade
+	5 CR19 — Gift of Revelry
+	5 CG01 — Supply Recon
+	5 CG02 — Gifted Archer
+	5 CG03 — Infantry of the Givers
+	5 CG04 — Riled Axe Wielder
+	5 CG05 — Turback Blossomer
+	5 CG06 — Rescuer Elf
+	5 CG07 — Leonin Forest Hunter
+	5 CG08 — Battlefield Leader
+	5 CG09 — Guardians' Gifted
+	5 CG10 — Turback Sentinel
+	5 CG11 — Parellan Green Knight
+	5 CG12 — Prey Upon
+	5 CG13 — Sentinel Growth
+	5 CG14 — Surtakki Wall Watch
+	5 CG15 — Commune With Spirits
+	5 CG16 — Gift of Growth
+	5 CG17 — Plummet
+	5 CG18 — Fertile Ground
+	5 CG19 — Vorgana's Naturalism
+	5 CC01 — Winged Terror
+	5 CC02 — Holder of Ancient Power
+	5 CC03 — Guardian Greatsword
+	5 CC04 — Gurinn Prism
+	5 CC05 — Warped Landscape
